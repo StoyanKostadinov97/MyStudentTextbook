@@ -1,0 +1,298 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    font-family: 'Open Sans'
+} */
+
+@import 'register.css';
+@import 'header.css';
+@import 'login.css';
+
+.pell {
+    margin: 15px;
+    margin-top: 25px;
+    border: 1px solid rgba(10,10,10,0.1);
+    /* box-sizing: border-box; */
+    height: 370px;
+  }
+  
+  .pell-content {
+    box-sizing: border-box;
+    height: auto;
+    outline: 0;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .pell-actionbar {
+    background-color: #FFF;
+    border-bottom: 1px solid rgba(10,10,10,0.1);
+  }
+  
+  .pell-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    outline: 0;
+    width: 30px;
+    vertical-align: bottom;
+  }
+  
+  .pell-button-selected {
+    background-color: #F0F0F0;
+  }
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #666;
+    background-color: rgb(81, 121, 162);
+}
+
+h1, h2, h3 {
+    color: #4b4b4b;
+    margin: 1.2em 0 .5em 0;
+}
+
+
+.content {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 10px;
+    border: solid 1px #eee;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    font-size: .9em;
+    font-weight: normal;
+    border-right: 1px solid #fff;
+}
+
+th {
+    background: #eee;
+    white-space: nowrap;
+}
+
+td:first-child {
+    color: royalblue;
+    white-space: nowrap;
+}
+
+p, td {
+    line-height: 1.5;
+}
+
+.inline-code {
+    padding: 1px 5px;
+    background: #eee;
+    border-radius: 2px;
+}
+
+pre {
+    margin: 10px 0;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    line-height: 18px;
+    background: #edf3f8;
+    font-size: 14px;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button.info {
+    background: #538fcd;
+    color: #fff;
+}
+
+.area-buttons {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#calendar-container{
+    height: -webkit-fill-available;
+    overflow: auto;
+}
+
+#input-add-event{
+    display:block;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#tasks{
+    width: 780px;
+    float: left;
+    margin:10px;
+    /* margin-right: 5px; */
+    background: #fff;
+    /* overflow: auto; */
+    border-radius: 5px;
+    position: relative;
+}
+
+#myCalendar{
+    width: 448px;
+    height: 350px;
+    top:0px;
+    float: right;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border: 0px;
+    position: relative;
+    
+}
+#task-menu-name{
+    margin-left: 15px;
+    position: absolute;
+}
+#menu-clock{
+    height:50px;
+    font-size: 25px;
+}
+
+#add-event-button{
+    position: relative;
+    bottom: 10px;
+    right:10px;
+    float: right;
+}
+
+#clock{
+    padding-top:10px;
+    margin:10px;
+    padding-bottom: 20px;
+    float: right;
+    overflow:auto;
+}
+
+#tasks-ul{
+    margin-top: 20px;
+    padding:15px;
+} 
+
+.task{
+    margin:2px;
+    padding:8px;
+    list-style: none;
+}
+
+.task:hover{
+    background:#eee;
+}
+
+input{
+    margin-left: 10px;
+    border-radius: 5px;
+    border:1px;
+    background: #eee;
+}
+
+#info-task-note{
+    position: fixed;
+    
+    top:60px;
+    left:300px;
+    margin:15px;
+    padding: 10px;
+    display: none;
+    /* color:white; */
+    background-color: #eee;
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    z-index: 1;
+    /* height: fit-content; */
+}
+
+#notes-div-container{
+    width: auto;
+    max-width: 1000px;
+    height: auto;
+    max-height: 800px;
+    margin: 10px;
+    margin-right: 5px;
+    background: #fff;
+    overflow: auto;
+    border-radius: 5px;
+    position: relative;
+    /* display:none; */
+}
+#text-output{
+    display:none;
+}
+#editor-save-button{
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 20px
+}
+#date{
+    margin:10px;
+    position:relative;
+    align-content: center;
+    font-size: 25px;
+}
+#task_name{
+    margin:10px;
+    position:relative;
+    align-content: center;
+    font-size:35px;
+}
+#task-information{
+    height: 25px;
+    padding: 15px;
+}
+/* header{
+    background: #0b173d;
+    position: relative;
+    height: 44px;
+    
+} */
+/* header label{
+    background:#0b173d;
+    color:white;
+    position: relative;
+    right:100px;
+    margin-left: 25px;
+    margin-top: 10px;
+    float:right;
+    font-size: 20px;
+} */
+#home{
+    float: left;
+    right:0px;
+    font-size:30px;
+    margin-top: 5px;
+}
+
