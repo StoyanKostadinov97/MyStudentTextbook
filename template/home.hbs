@@ -1,0 +1,33 @@
+{{>header}}
+<div id="info-task-note"> If you want to take notes for any task just dbclick it!</div>
+<div id="calendar-container">
+    <div id="tasks">
+        <div id="menu-clock">
+            <p id="task-menu-name">
+                Tasks for the day:
+            </p>
+            <p id="clock"></p>
+        </div>
+        <div id="task-div">
+
+            <ul id="tasks-ul">
+                {{>taskContainer}}
+            </ul>
+            <div id='input-add-event'>
+                <label>From:</label>
+                <input id="fromInput" type="time"></input>
+                <label>To:</label>
+                <input id="toInput" type="time"></input>
+                <label>On:</label>
+                <input id="dateInput" type="Date"></input>
+                <label>Task name:</label>
+                <input id="clazzInput" type="Class"></input>
+            </div>
+            <button id="add-event-button">Add Task</button>
+
+        </div>
+    </div>
+
+    <div id="myCalendar" class="vanilla-calendar"></div>
+</div>
+    
